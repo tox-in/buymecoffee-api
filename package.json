@@ -1,0 +1,25 @@
+{
+  "name": "buymecoffee",
+  "version": "1.0.0",
+  "description": "nodejs,express,mongodb and cryptomus api",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "buymecoffe"
+  },
+  "author": "tox-in (tony herve)",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "helmet": "^7.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.0"
+  }
+}
