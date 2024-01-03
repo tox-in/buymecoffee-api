@@ -396,8 +396,10 @@ body {
 \*-----------------------------------*/
 
 .background { background-color: var(--background);}
+
 .on-surface-text { color: var(--on-surface);}
 
+.on-surface-variant-text { color: var(--on-surface-variant); }
 
 
 /*-----------------------------------*\
@@ -410,14 +412,54 @@ body {
   margin-inline: auto;
 }
 
-
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
 
+.hero {
+  padding-block-end: var(--space-4);
+  margin-block-end: var(--space-4);
+  border-block-end: 1px solid var(--outline-variant);
+}
 
+.hero-banner {
+  border-radius: var(--radius-small);
+  height: 120px;
+  overflow: hidden;
+}
 
+.hero-card .card-banner {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  border-radius: var(--radius-full);
+  margin-inline: auto;
+  margin-block-start: -48px;
+  overflow: hidden;
+  border: 2px solid var(--background);
+  margin-block-end: var(--space-2);
+}
+
+.hero-card .card-content {
+  text-align: center;
+  padding-inline: var(--space-2);
+}
+
+.hero-card .subtitle {
+  opacity: 0.8;
+  margin-block: var(--space-2) var(--space-1);
+}
+
+.hero-card .card-text {
+  max-width: 50ch;
+  margin-inline: auto;
+}
 
 
 /*-----------------------------------*\
