@@ -1,18 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<body class="background on-surface-text">
+  <body class="background on-surface-text">
     <!--
         - #TOP BAR
     -->
- <header class="top-bar">
-    <div class="container">
+    <header class="top-bar">
+      <div class="container">
         <a href="/" class="logo">
-            <img src="/images/logo.svg" alt="FansFund">
+          <img src="/images/logo.svg" alt="FansFund" />
         </a>
-    </div>
-   </header>  
-</body>
-<head>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!--
+            - #HERO
+        -->
+        <section class="hero">
+          <div class="hero">
+            <figure class="hero-banner">
+              <img
+                src="/images/banner.png"
+                width="944"
+                height="280"
+                alt=""
+                class="img-cover"
+              />
+            </figure>
+
+            <div class="hero-card">
+              <figure class="card-banner">
+                <img
+                  src="/images/profile-photo.png"
+                  width="120"
+                  height="120"
+                  alt=""
+                  class="img-cover"
+                />
+              </figure>
+
+              <div class="card-content">
+                <h2 class="title-large">Tox-in(Tony herve)</h2>
+                <p class="subtitle body-medum on-surface-variant-text">
+                  Software Engineer
+                </p>
+                <p class="card-text body-medium on-surface-variant-text">
+                  Become proficient and experienced web developer through a
+                  hands a hands-on project-entered approach.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="container lg-col-2">
+          <!--
+          - #CONTRIBUTE
+        -->
+
+          <section class="card elevated contribute">
+            <h2 class="title-medium">Show your love to tox-in(tony herve)</h2>
+
+            <form action="" class="contribute-form" data-cotribute-form>
+              <div class="counter-wrapper">
+                <div class="body-medium on-surface-variant-text counter-label">
+                  <span
+                    class="material-symbols-rounded primary-text icon-small"
+                  >
+                    favorite
+                  </span>
+                  $1 each
+                </div>
+                <div class="counter">
+                  <button
+                    type="button"
+                    class="icon-btn filled"
+                    data-decrement-btn
+                  >
+                    <span class="material-symbols-rounded"> remove </span>
+                    <div class="state-layer"></div>
+                  </button>
+
+                  <div class="text-field-wrapper counter-field">
+                    <input
+                      type="number"
+                      name="amount"
+                      value="1"
+                      min="1"
+                      max="999"
+                      class="text-field outlined body-large"
+                    />
+                  </div>
+
+                  <button
+                    type="button"
+                    class="icon-btn filled"
+                    data-increment-btn
+                  >
+                    <span class="material-symbols-rounded">add</span>
+
+                    <div class="state-layer"></div>
+                  </button>
+                </div>
+              </div>
+
+              <div class="text-field-wrapper">
+                <label for="name" class="text-field-label body-large"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name or @yourtwitter(optional)"
+                  class="text-field outlined body-large"
+                  data-form-field
+                />
+              </div>
+
+              <div class="text-field-wrapper">
+                <label for="email" class="text-field-label body-large"
+                  >Email</label
+                >
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Your email address"
+                  class="text-field outlined body-large"
+                  required
+                  data-form-field
+                />
+              </div>
+
+              <div class="text-field-wrapper">
+                <label for="message" class="text-field-label body-large"
+                  >Message</label
+                >
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Say something (optional)"
+                  class="text-field outlined body-large"
+                  data-form-field
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="button filled label-large"
+                data-submit-btn
+              >
+                Contribute $<span data-total>1</span>
+                <div class="state-layer"></div>
+              </button>
+            </form>
+          </section>
+
+          <div>
+            <!--
+              - #ABOUT
+            -->
+            <section class="card outlined about">
+              <h2 class="title-medium">About</h2>
+              <p class="card-text on-surface-variant-text body-medium">
+                Hey there! If you have learned anything from my work or just
+                enjoy our time together on the web, you can now show your
+                support - thank you so much!
+              </p>
+              <p class="on-surface-variant-text body-medium wrapper">
+                <span class="material-symbols-rounded icon-small">
+                  alternate_email
+                </span>
+                <a href="mailto:habimanat78@gmail.com">habimanatonyherve@gmail.com</a>
+              </p>
+
+              <ul class="social-link">
+                <li>
+                  <a href="https://youtube.com/tonyherveherve" target="_blank" class="social-link">
+                    <img src="/images/youtube.svg" width="24" height="24" alt="youtube">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://instagram.com/tonyherveherve" target="_blank" class="social-link">
+                    <img src="/images/instagram.svg" width="24" height="24" alt="instagram">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://twitter.com/tonyherveherve" target="_blank" class="social-link">
+                    <img src="/images/x.svg" width="24" height="24" alt="twitter">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://discord.com/tonyherveherve" target="_blank" class="social-link">
+                    <img src="/images/discord.svg" width="24" height="24" alt="discord">
+                  </a>
+                </li>
+                
+              </ul>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+
+  <head>
     <%- include('../layouts/head.ejs', { title: 'FansFund | tox-in'})%>
-</head>
+  </head>
 </html>
