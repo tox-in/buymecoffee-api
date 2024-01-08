@@ -672,8 +672,53 @@ input:-webkit-autofill:where(:hover, :focus, :active) {
   #HISTORY
 \*-----------------------------------*/
 
+.history-card {
+  display: grid;
+  padding-block: var(--space-2);
+  gap: var(--space-2);
+}
 
+.history-card .card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
 
+.history-card .card-title span {
+  display: inline-block;
+}
+
+.history-card .card-avatar {
+  height: 40px;
+  width: 40px;
+  display: grid;
+  place-items: center;
+  background-color: var(--avatar);
+  color: var(--on-avatar);
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.history-card .card-body {
+  position: relative;
+  background-color: var(--surface-container-high);
+  border-radius: var(--radius-large);
+  isolation: isolate;
+  padding: var(--space-4);
+}
+
+.history-card .card-body::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: var(--surface-container-high);
+  transform-origin: top left;
+  transform: translate(18px, -16px) rotate(-45deg);
+  z-index: -1;
+}
 
 
 /*-----------------------------------*\
