@@ -245,6 +245,8 @@ body {
   line-height: var(--lh-body-medium);
   min-height: 100vh;
   min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
 }
 
 input { caret-color: var(--primary);}
@@ -570,6 +572,8 @@ input:-webkit-autofill:where(:hover, :focus, :active) {
   align-items: center;
   gap: var(--space-1);
 }
+
+.main { flex-grow: 1;}
 
 /*-----------------------------------*\
   #HERO
