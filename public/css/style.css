@@ -729,6 +729,11 @@ input:-webkit-autofill:where(:hover, :focus, :active) {
   #FOOTER
 \*-----------------------------------*/
 
+.footer {
+  padding-block: var(--space-4);
+  text-align:center;
+  border-block-start: 1px solid var(--outline-variant);
+}
 
 
 

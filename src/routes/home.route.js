@@ -9,8 +9,11 @@
  * node modules
  */
 const router = require('express').Router();
-const home = require('../controllers/home.controller');
 
+/**
+ * custom modules
+ */
+const { home } = require('../controllers/home.controller')
 
 router.get('/', home);
 
