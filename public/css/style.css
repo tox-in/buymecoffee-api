@@ -827,4 +827,42 @@ input:-webkit-autofill:where(:hover, :focus, :active) {
 
   .lg-col-2 { gap: var(--space-6);}
 
+  .card {
+    margin-block-end: var(--space-6);
+    gap: var(--space-3);
+  }
+
+  .icon-small { font-size: 24px; }
+
+  /**
+  * HERO
+  */
+
+  .hero {
+    padding-block-end: var(--space-6);
+    margin-block-end: var(--space-6);
+  }
+
+  .hero-card .card-banner {
+    width: 120px;
+    height: 120px;
+    margin-block-start: -60px;
+  }
+
+  /**
+  * CONTRIBUTE
+  */
+
+  .counter-wrapper { padding-block-start: var(--space-5);}
+
+  .contribute-form { gap: var(--space-3);}
+
+  /**
+  * HISTORY
+  */
+
+  .history-card, .history-card .card-header {
+    gap: var(--space-3);
+  }
+
 }
