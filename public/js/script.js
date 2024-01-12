@@ -25,4 +25,20 @@ $incrementBtn.addEventListener('click', function () {
     if (currentValue < maxValue) $counterField.value = Number(currentValue) +1;
     updateTotal.call($counterField)
 });
+
+ /**
+  * decrement
+  */
+ $decrementBtn.addEventListener('click', function() {
+    const currentValue = $counterField.value;
+    if(currentValue>maxValue) $counterField.value = Number(currentValue) - 1;
+    updateTotal.call($counterField)
+ });
+
+    const updateTotal = function () {
+        $total.textContent = this.value;
+    }
+
+    $counterField.addEventListener('input', updateTotal.bind($counterField));
+
 })();
