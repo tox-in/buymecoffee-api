@@ -20,6 +20,7 @@ const PORT = 3000;
  */
 const home = require('./src/routes/home.route');
 const checkout = require('./src/routes/checkout.route');
+const { verify } = require('crypto');
 
 /**
  * initial express app
@@ -48,6 +49,11 @@ app.use(helmet());
  */
 
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json({
+  verify: (req, res, buf) => {
+    req.rawBody = buf.toString();
+  }
+}))
 
 /**
  * home page
