@@ -59,29 +59,29 @@
     try {
       submitBtn.setAttribute("disabled", "");
 
-      const formFields = document.querySelectorAll('[data-form-field');
+      const formFields = document.querySelectorAll("[data-form-field");
 
-      const formData = {}
+      const formData = {};
 
-      formFields.forEach(item => {
-        formData[item.getAttribute('name')] = item.value.trim();
+      formFields.forEach((item) => {
+        formData[item.getAttribute("name")] = item.value.trim();
       });
 
-      const response = await fetch('/checkout', {
-        method: 'POST',
+      const response = await fetch("/checkout", {
+        method: "POST",
         body: new URLSearchParams(formData).toString(),
         headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-        }
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
       });
 
-      if(response.ok) {
+      if (response.ok) {
         const responseData = await response.json();
         console.log(responseData);
+        window.location.href = responseData.result.url;
       } else {
-        console.error('Form submission failed: ', response.statusText);
+        console.error("Form submission failed: ", response.statusText);
       }
-
     } catch (error) {
       console.error(error);
       throw error;
