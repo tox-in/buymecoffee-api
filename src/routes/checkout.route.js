@@ -14,7 +14,7 @@ const router = require('express').Router();
  * custom modules
  */
 
-const { checkout } = require('../controllers/checkout.controller');
+const { checkout, callback } = require('../controllers/checkout.controller');
 const webhookVerification = require('../middlewares/webhook_verify_middleware');
 
 router.post('/', checkout);
