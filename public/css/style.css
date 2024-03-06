@@ -377,6 +377,22 @@ body {
  * Icon button
  */
 
+ .card {
+  padding: var(--space-4);
+  border-radius: var(--rounded-medium);
+  display: grid;
+  gap:  var(--space-2);
+  margin-block-end: var(--space-4);
+ }
+
+ .car.elevated{
+  background-color: var(--surface-container-low);
+  box-shadow: var(--shadow-1);
+ }
+
+ /**
+ * Card
+ */
 
 /**
  * Text field
@@ -466,7 +482,21 @@ body {
   #CONTRIBUTE
 \*-----------------------------------*/
 
+.contribute-form {
+  display: grid;
+  gap: var(--space-2);
+}
 
+.counter-wrapper, .counter {
+  display: flex;
+  align-items: center;
+}
+.counter-wrapper {
+  justify-content: space-between;
+  padding-block-start: var(--space-4);
+  border-block-start: 1px solid var(--outline-variant);
+  margin-block-start: var(--space-2);
+}
 
 
 
